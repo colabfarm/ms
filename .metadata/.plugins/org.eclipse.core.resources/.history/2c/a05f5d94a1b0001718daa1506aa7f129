@@ -1,0 +1,17 @@
+package com.example.demo.item;
+
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.rest.Product;
+
+class ItemController {
+	@RequestMapping(value="/api", items=MediaType.APPLICATION_JSON_VALUE)
+	public Item getItem()
+	{
+		Item item = new Item();
+		item.setDescription("Desc");
+		item.setName("Philips LED TV");
+		return item;
+	}
+}

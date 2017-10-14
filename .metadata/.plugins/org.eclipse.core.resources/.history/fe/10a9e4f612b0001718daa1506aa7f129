@@ -1,0 +1,19 @@
+package com.example.demo.rest;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+class Rest {
+	
+	@RequestMapping("/api")
+	public Number rootApp()
+	{
+		return 200;
+	}
+	@RequestMapping("/api/test")
+	public String newMethod()
+	{
+		return "test";
+	}
+}
