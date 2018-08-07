@@ -1,1 +1,1 @@
-test
+Sample application on Java Microservices.
